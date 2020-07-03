@@ -1,0 +1,76 @@
+#livesearch{
+	background: purple;
+	max-height:150px;
+	overflow:auto;
+	margin-left: 20%;
+	margin-top: 25%;
+	width:50%;
+	box-shadow:0px 2px 4px #444;
+	border-radius: 2px;
+	}
+/***********************************/
+.live-outer{
+	width:100%;
+	height:60px;
+	border-bottom:1px solid #ccc;
+	background:#fff;
+	margin-bottom: 2px;
+	}
+.live-outer:hover{
+	background:#F3F3F3;
+	}
+
+.livedet{
+	float:left;
+	width:90%;
+	height:60px;
+	}
+
+.livename{
+	width:100%;
+	height:22px;
+	margin-top:4px;
+	}
+.livename p{
+	margin:0px;
+	color:black;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #DDDDDD;
+	font-size:17px;
+	}
+
+.liveprice{
+	width:100%;
+	height:25px;
+  color: blue;
+	}
+.liveprice p{
+	float:left;
+	width:50%;
+	}
+
+.liveauthor{
+	float:left;
+	width:50%;
+	color: grey;
+	}
+.liveauthor p{
+	margin:0px;
+	font-size:16px;
+	}
+
+.live-im{
+	float:left;
+	width:10%;
+	height:60px;
+	}
+
+.live-im img{
+	width:100%;
+	height:100%;
+	}
+
+.bk{
+	padding: 0px;
+	margin: 0px;
+}

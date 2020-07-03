@@ -1,0 +1,508 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /* NOTE: The box-sizing property allows us to include the padding and border in an element's total width and heigh */
+}
+
+body{
+  font-size: 20px;   /* NOTE: relative fonting will be used */
+  font-family: 'Flamenco', cursive ;  /* NOTE: google fonts */
+  height: 100%;
+}
+
+header{
+  background-image: url('img/a1.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* NOTE: vh= view height */
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text], input[type=password], input[type=email]{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: purple;
+    opacity: 0.5;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    height: 36px;
+    color: white;
+  }
+
+.foot_li{
+  text-align: center;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.foot_li:hover{
+
+  border: white 1px solid;
+
+}
+
+.clearfix:after{ /* NOTE: clearing child elements of each things */
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+
+}
+
+.des{
+  background-image: url('img/a2.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+.container1{
+  border: 10px solid purple;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  color: white;
+}
+
+
+
+
+
+.login_page{
+  background-image: url('img/a3.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  font-size: 300;
+}
+
+.addbook_des{
+  background-image: url('img/a7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 300;
+
+}
+
+.addbook_container1{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  border: 10px solid purple;
+  color: white;
+  margin: 0px;
+}
+
+.container2{
+  border: 10px solid purple;
+  width: 100%;
+  height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  color: white;
+  padding: 20;
+  spacing: 20;
+}
+
+
+.login_msg{
+  border: 10px solid purple;
+  padding: 50px;
+}
+
+.info{
+  padding: 30px;
+}
+
+.register, .login, .addbooks {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.cancel{
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+  text-decoration: none;
+
+}
+.addbooks:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+.register:hover, .cancel:hover, .login:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  color: purple;
+}
+
+
+.row{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+.logo{
+height: 130px;
+width: 230px;
+float: left;
+margin-top: 20px;
+margin-left: 5px;
+border-radius: 50%;
+}
+
+
+
+.logo:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left:  40px
+
+}
+
+.main-nav li a{
+  padding: 5px 0;
+  color: white;
+  text-decoration: none; /* NOTE: no underlime */
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover{
+  border: 2px solid purple;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.main-head{
+  width: 1180px;
+  padding:0 2%;
+  position: absolute; /* NOTE: writting will remain relative to the header is position */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+h1{
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.btnpoll{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  font-weight: lighter;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.2s , border 0.2s, color 0.2;
+  border: 1px solid purple;
+  background-color: purple;
+  margin-top: 20px;
+  margin-left: 1000px;
+
+}
+
+
+.btn{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  font-weight: lighter;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s , border 0.2s, color 0.2;
+  border: 1px solid purple;
+  background-color: purple;
+}
+
+.btn:hover{
+  background-color: transparent;
+  color: purple;
+}
+
+.blink{
+  animation: colorchange 1s infinite;
+
+}
+
+
+@keyframes colorchange {
+    0%{color: red;}
+    25%{color: purple;}
+    50%{color: white;}
+    100%{color: purple;}
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  height: 50px;
+  float: left;
+  width: 280px;
+  background: #f1f1f1;
+  margin-left: 20%;
+  margin-top: 15%;
+  width: 50%;
+  margin-bottom: 0px;
+
+}
+
+form.search button {
+  float: left;
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+  background: purple;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-right: 20%;
+  margin-top: 15%;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* NOTE: responsice */
+@media only screen and (max-width: 1180px){
+	.main-head{
+		width:100%;
+		padding:0 2%;
+	}
+
+	.row{
+		width:100%;
+		padding:0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+
+  .main-nav{float: left;}
+
+  .main-nav li{
+    display: block;
+    margin-top: 10px;
+    display: inline-block;
+    list-style: none;
+    margin-left:  40px
+  }
+}
+
+@media only screen and (max-width: 668px){
+	h1{font-size: 140%;
+  margin-top: 20px;}
+
+  .main-nav{float: left;}
+
+  .main-nav li{
+    display: block;
+    font-size: 130%;
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    list-style: none;
+    margin-left:  10px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+	.btn{
+		margin-bottom: 20px;
+    background-color: white;
+    color: purple;
+	}
+  .main-nav li{
+    display: flex;
+    font-size: 100%;
+
+    list-style: none;
+    margin-left:  44px;
+    spacing: none;
+    text-shadow: 2px 2px black;
+    padding: none;
+  }
+	h1{font-size: 180%;
+  margin-bottom: 25%;}
+
+  form.search button {
+    float: right;
+    width: 70px;
+    height: 50px;
+   padding: 1px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    margin-right: 20%;
+    margin-top: 1%;
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  .cancel, .register, .login{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .addbooks{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+ .login{
+    width: 20%;
+  }
+
+  form.search button {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 389px){
+
+
+  .main-nav li{
+    display: flex;
+    font-size: 70%;
+    list-style: none;
+    margin-left:  auto;
+    spacing: none;
+    text-shadow: 2px 2px black;
+    padding: none;
+  }
+
+  .logo{
+    width: 20%;
+    height: 30%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+  .main-head{
+    margin-top: 1px;
+    margin-left: 20px;
+    padding: 0px;
+  }
+
+  .h1{
+    width: 50%
+  }
+}
